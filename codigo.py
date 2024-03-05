@@ -1,21 +1,21 @@
 """
-Ejercicio 1: Suma de Dos Números
+Ejercicio 1: Suma de Dos Números Entero
 Descripción: Este ejercicio consiste en crear una función que reciba dos números como argumentos y devuelva la suma de ambos.
 """
 
 def sumar(a, b):
-    # Escribe aqui el return de la suma de 2 numeros
+    return a + b
 
 """
 Ejercicio 2: Factorial de un Número
 Descripción: En este ejercicio se requiere crear una función que calcule el factorial de un número dado. El factorial de un número nn se calcula como n!=n×(n−1)×(n−2)×…×1n!=n×(n−1)×(n−2)×…×1.
 """
-    
+import math    
 def factorial(n):
     if n == 0:
-        # Escribe aqui el return de la operacion anterior
+        return 1
     else:
-        # Escribe aqui el return de la operacion contraria a la operacion anterior
+        return math.factorial(n)
 
 """
 Ejercicio 3: Contar Vocales en una Cadena
@@ -27,7 +27,7 @@ def contar_vocales(cadena):
     contador = 0
     for letra in cadena:
         if letra in vocales:
-            # Escribe aqui el contador de vocales
+            contador += 1
     return contador
 
 """
@@ -36,7 +36,7 @@ Descripción: En este ejercicio se debe implementar una función que verifique s
 """
 
 def es_palindromo(cadena):
-    # Escribe aqui el return de la cadena al reves con una funcion de python
+    # Escribe aqui el return de la cadena al reves con una funcion de python    
     return cadena == cadena[::-1]
 
 """
@@ -46,6 +46,7 @@ Descripción: En este ejercicio se debe crear una función que calcule la suma d
 
 def suma_lista(lista):
     # Escribe aqui el return de la suma de todos los elementos de la lista
+    suma = 0
     for elemento in lista:
         suma += elemento
     return suma
